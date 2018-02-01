@@ -12,25 +12,25 @@ import HomeStore from './stores/pages/home'
 
 const Home = () => (
   <div>
-    <h2>Home</h2>
+    <h2 styleName='blue'>Home</h2>
   </div>
 )
 
 const About = () => (
   <div>
-    <h2>About</h2>
+    <h2 styleName='blue'>About</h2>
   </div>
 )
 
 const Topic = ({ match }) => (
   <div>
-    <h3>{match.params.topicId}</h3>
+    <h3 styleName='blue'>{match.params.topicId}</h3>
   </div>
 )
 
 const Topics = ({ match }) => (
   <div>
-    <h2>Topics</h2>
+    <h2 styleName='blue'>Topics</h2>
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>

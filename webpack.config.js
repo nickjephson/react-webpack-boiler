@@ -31,10 +31,7 @@ module.exports = {
 						}
 					},
 					{
-						loader: 'postcss-loader',
-						options: {
-							parser: 'postcss-scss'
-						}
+						loader: 'postcss-loader'
 					},
 					{
 						loader: 'sass-loader',
