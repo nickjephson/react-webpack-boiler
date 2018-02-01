@@ -1,0 +1,23 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    ["react-css-modules", {
+      "generateScopedName": "[local]--[hash:base64:5]",
+      "filetypes": {
+        ".scss": {
+          "syntax": "postcss-scss"
+        }
+      }
+    }],
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    [
+      "module-resolver", {
+        "root": ["./"],
+        "alias": {
+          "@stores": "src/stores"
+        }
+      }
+    ]
+  ]
+}

@@ -1,0 +1,11 @@
+// React, 
+// MobX, 
+// Sass,
+// PostCSS   
+// CSSModules, 
+// React CSS Modules
+// Images,
+// Fonts,
+// Yarn.
+// babel alias - included babel module resolver
+React router
