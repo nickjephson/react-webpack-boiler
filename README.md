@@ -1,7 +1,7 @@
-#Simple React Boiler
+# Simple React Boiler
 Super simple boilerplate for react.
 
-##Current Features
+## Current Features
 * React
 * MobX
 * React router
@@ -11,7 +11,7 @@ Super simple boilerplate for react.
 * Image loader
 * Font loader
 
-##Features coming soon
+## Features coming soon
 * Production environment
 * Jest + Enzyme testing
 * JS + SCSS linting
