@@ -10,8 +10,9 @@ Super simple boilerplate for react.
 * PostCSS
 * Image loader
 * Font loader
+* Grid
 
 ## Features coming soon
-* Production environment
+* Separate production and development builds
 * Jest + Enzyme testing
 * JS + SCSS linting
