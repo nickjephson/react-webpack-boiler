@@ -1,6 +1,6 @@
 $blue: rgb(6, 91, 160);
 
-.blue {
+:global(.blue ) { /* stylelint-disable-line */
   color: $blue;
   font-size: 2em;
 }

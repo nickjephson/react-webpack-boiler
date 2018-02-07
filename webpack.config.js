@@ -7,7 +7,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
 	},
 	devServer: {
-		contentBase: './dist'
+		contentBase: './dist',
+		historyApiFallback: true
 	},
   module: {
     rules: [
@@ -31,10 +32,7 @@ module.exports = {
 						}
 					},
 					{
-						loader: 'postcss-loader',
-						options: {
-							parser: 'postcss-scss'
-						}
+						loader: 'postcss-loader'
 					},
 					{
 						loader: 'sass-loader',

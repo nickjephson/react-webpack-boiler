@@ -11,11 +11,14 @@
     }],
     "transform-decorators-legacy",
     "transform-class-properties",
+    "syntax-dynamic-import",
     [
       "module-resolver", {
         "root": ["./"],
         "alias": {
-          "@stores": "src/stores"
+          "@stores": "./src/stores",
+          "@pages": "./src/pages",
+          "@components": "./src/components"
         }
       }
     ]

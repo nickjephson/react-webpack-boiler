@@ -1,3 +1,11 @@
+*.DS_Store
+*.idea
+*.iml
+*.log
+*.tmp
+*.vscode
+*.sonarlint
+*.rdb
 node_modules
 /dist
 requirements.txt

@@ -1,6 +1,10 @@
 import HomeStore from './pages/home.js'
 
-const stores = {
+const store = {
+    HomeStore
+}
+
+export {
     HomeStore
 }
 

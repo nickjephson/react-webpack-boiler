@@ -1,0 +1,30 @@
+// Move fonts to fonts file
+@font-face {
+  font-family: 'Roboto Black';
+  src:  url('../fonts/Roboto-Black.ttf') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/Roboto-Regular.ttf') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto'
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-family: 'Roboto Black';
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
