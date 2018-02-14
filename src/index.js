@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 // Global styles for now, will update with Root component wrapper
-import globalStyles from './styles/styles.scss' //eslint-disable-line
+import globalStyles from './styles/styles.scss'
 
 import {
   BrowserRouter as Router,
