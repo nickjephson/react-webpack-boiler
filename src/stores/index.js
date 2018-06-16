@@ -1,6 +1,6 @@
-import HomeStore from './pages/home.js'
+import HomeStore from './pages/home-store.js'
 
-const store = {
+const stores = {
     HomeStore
 }
 
@@ -8,4 +8,4 @@ export {
     HomeStore
 }
 
-export default store
+export default stores

@@ -5,9 +5,11 @@
 import HomePage from './home/home.js'
 import AboutPage from './about/about.js'
 import TopicsPage from './topics/topics.js'
+import PeoplePage from './PeoplePage/PeoplePage.js'
 
 export {
     HomePage,
     AboutPage,
-    TopicsPage
+    TopicsPage,
+    PeoplePage
 }

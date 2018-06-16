@@ -18,7 +18,8 @@
         "alias": {
           "@stores": "./src/stores",
           "@pages": "./src/pages",
-          "@components": "./src/components"
+          "@components": "./src/components",
+          "@styles": "./src/styles"
         }
       }
     ]

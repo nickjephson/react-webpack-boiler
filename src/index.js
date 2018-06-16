@@ -6,21 +6,23 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import globalStyles from './styles/styles.scss'
 
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
-  Link
+  Link,
+  Switch
 } from 'react-router-dom'
 
 import {
   HomePage,
   AboutPage,
-  TopicsPage
+  TopicsPage,
+  PeoplePage
 } from '@pages'
 
 class BasicExample extends Component {
   render () {
     return (
-      <Router>
+      <BrowserRouter>
         <Grid>
           <Row>
             <Col xs={12}>
@@ -28,17 +30,20 @@ class BasicExample extends Component {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/topics">Topics</Link></li>
+                <li><Link to="/people">People</Link></li>
               </ul>
 
               <hr/>
-
-              <Route exact path="/" component={HomePage}/>
-              <Route path="/about" component={AboutPage}/>
-              <Route path="/topics" component={TopicsPage}/>
+              <Switch>
+                <Route exact path="/" component={HomePage}/>
+                <Route path="/about" component={AboutPage}/>
+                <Route path="/topics" component={TopicsPage}/>
+                <Route path="/people" component={PeoplePage}/>
+              </Switch>
             </Col>
           </Row>
         </Grid>
-      </Router>
+      </BrowserRouter>
     )
   }
 }
