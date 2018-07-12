@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
-import {
-  Topic
-} from '@components'
+import { Topic } from '@components/Topic'
 
 import {
   Link,

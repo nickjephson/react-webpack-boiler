@@ -12,7 +12,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import { HomeStore } from '@stores/home-store'
 
-import { Person } from '@components'
+import { Person } from '@components/Person'
 
 @observer
 class Home extends Component {

@@ -11,10 +11,8 @@ import {
 
 import { HomeStore } from '@stores/home-store'
 
-import {
-  Person,
-  PersonProfile
-} from '@components'
+import { Person } from '@components/Person'
+import { PersonProfile } from '@components/PersonProfile'
 
 @observer
 class PeoplePage extends Component {
