@@ -9,7 +9,8 @@ import {
   BrowserRouter
 } from 'react-router-dom'
 
-import { HomeStore } from '@stores'
+import { HomeStore } from '@stores/home-store'
+
 import {
   Person,
   PersonProfile
@@ -17,7 +18,7 @@ import {
 
 @observer
 class PeoplePage extends Component {
-  
+
   renderList = ( match ) => {
     console.log('match inside renderList', match)
     return (

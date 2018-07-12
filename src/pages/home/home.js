@@ -10,7 +10,7 @@ import {
 import { observer } from 'mobx-react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
-import { HomeStore } from '@stores'
+import { HomeStore } from '@stores/home-store'
 
 import { Person } from '@components'
 

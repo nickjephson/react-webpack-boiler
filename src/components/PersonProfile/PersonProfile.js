@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
-import { HomeStore } from '@stores'
+import { HomeStore } from '@stores/home-store'
 
-class PersonProfile extends Component { 
-  
+class PersonProfile extends Component {
+
   componentDidMount () {
     console.log(this.props)
     HomeStore.getPerson(this.props.match.personId)
-  }  
- 
+  }
+
   render () {
     return (
       <div>
