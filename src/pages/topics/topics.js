@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
-
-import { Topic } from '@components/Topic'
 
 import {
   Link,
   Route
 } from 'react-router-dom'
+
+import Topic from '@components/Topic'
 
 const Topics = ({ match }) => (
   <div>

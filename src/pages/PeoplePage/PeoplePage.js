@@ -9,16 +9,15 @@ import {
   BrowserRouter
 } from 'react-router-dom'
 
-import { HomeStore } from '@stores/home-store'
+import HomeStore from '@stores/pages/home-store'
 
-import { Person } from '@components/Person'
-import { PersonProfile } from '@components/PersonProfile'
+import Person from '@components/Person'
+import PersonProfile from '@components/PersonProfile'
 
 @observer
 class PeoplePage extends Component {
 
   renderList = ( match ) => {
-    console.log('match inside renderList', match)
     return (
       <Route exact path={match.url} render={() => (
         this.renderPeople(HomeStore.people)
@@ -44,7 +43,6 @@ class PeoplePage extends Component {
 
   render () {
     const { match } = this.props
-    console.log(this.props)
     return (
       <div>
         <h2>People</h2>

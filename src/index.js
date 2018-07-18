@@ -12,12 +12,10 @@ import {
   Switch
 } from 'react-router-dom'
 
-import {
-  HomePage,
-  AboutPage,
-  TopicsPage,
-  PeoplePage
-} from '@pages'
+import HomePage from '@pages/home'
+import AboutPage from '@pages/about'
+import TopicsPage from '@pages/topics'
+import PeoplePage from '@pages/PeoplePage'
 
 class BasicExample extends Component {
   render () {

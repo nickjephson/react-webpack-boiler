@@ -10,9 +10,7 @@ import {
 import { observer } from 'mobx-react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
-import { HomeStore } from '@stores/home-store'
-
-import { Person } from '@components/Person'
+import Test from '@components/Test'
 
 @observer
 class Home extends Component {
@@ -24,6 +22,7 @@ class Home extends Component {
         <Row>
           <Col xs={12}>
             <h2>Home Page</h2>
+            <Test />
           </Col>
         </Row>
       </Grid>

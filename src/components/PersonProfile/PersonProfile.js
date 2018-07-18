@@ -1,16 +1,17 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
-import { HomeStore } from '@stores/home-store'
+import HomeStore from '@stores/pages/home-store'
 
 class PersonProfile extends Component {
 
   componentDidMount () {
-    console.log(this.props)
-    HomeStore.getPerson(this.props.match.personId)
+    const { match } = this.props
+    HomeStore.getPerson(match.params.personId)
   }
 
   render () {
+    const { match } = this.props
     return (
       <div>
         <h3>{match.params.personId}</h3>
