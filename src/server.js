@@ -1,8 +1,7 @@
-var express = require('express')
-var path = require('path')
-var app = express()
+const express = require('express')
+const path = require('path')
 
-var DIST_DIR = path.join(__dirname, "../dist"),
+const DIST_DIR = path.join(__dirname, "../dist"),
     PORT = 3000,
     app = express();
 
