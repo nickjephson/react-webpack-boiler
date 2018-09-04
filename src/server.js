@@ -1,16 +1,15 @@
 const express = require('express')
 const path = require('path')
+const html = require('./template')
 
 const DIST_DIR = path.join(__dirname, "../dist"),
     PORT = 3000,
-    app = express();
+    app = express()
 
-//Serving the files on the dist folder
-app.use(express.static(DIST_DIR));
+//Serving the static files from the dist folder
+app.use(express.static(DIST_DIR))
 
-//Send index.html when the user access the web
-app.get("*", function (req, res) {
-  res.sendFile(path.join(DIST_DIR, "index.html"));
-});
+//Send javascript html template when the user access the web
+app.get("*", (req, res) => res.send(html) )
 
-app.listen(PORT, () => console.log('Example app listening on port 3000!'));
+app.listen(PORT, () => console.log('Example app listening on port 3000!'))
