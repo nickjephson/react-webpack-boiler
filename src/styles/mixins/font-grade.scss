@@ -1,0 +1,59 @@
+/**
+* @type: Mixin
+* @name: _font-grade
+* @usage: Define font size rem with fall back. Private mixin, do not use on its own.
+* @param: $grade number
+*/
+@mixin _font-grade($size) {
+  font-size: $size;
+  font-size: rem($size);
+}
+
+/**
+* @type: Mixin
+* @name: font-grade
+* @usage: Restrict the amount of font sizes to those defined here
+* @param: $grade number
+* Grade options (small to large): -3, -2, -1, 0, 1, 2, 3, 4
+* PLEASE DON'T ADD MORE FONT SIZES!
+*/
+@mixin font-grade($grade: -3) {
+  @if ($grade == -4) {
+    @include _font-grade(12px);
+  }
+
+  @if ($grade == -3) {
+    @include _font-grade(14px);
+  }
+
+  @if ($grade == -2) {
+    @include _font-grade(16px);
+  }
+
+  @if ($grade == -1) {
+    @include _font-grade(18px);
+  }
+
+  @if ($grade == 0) {
+    @include _font-grade(21px);
+  }
+
+  @if ($grade == 1) {
+    @include _font-grade(24px);
+  }
+
+  @if ($grade == 2) {
+    @include _font-grade(28px);
+    line-height: 1.3;
+  }
+
+  @if ($grade == 3) {
+    @include _font-grade(34px);
+    line-height: 1.1;
+  }
+
+  @if ($grade == 4) {
+    @include _font-grade(54px);
+    line-height: .95;
+  }
+}

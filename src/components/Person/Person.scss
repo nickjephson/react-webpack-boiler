@@ -1,0 +1,38 @@
+@import '../../styles/import';
+
+.person {
+  background: $blue;
+  margin: $gbl-margin $gbl-margin-small $gbl-margin-small;
+  padding: 20px;
+  color: $white;
+  position: relative;
+  top: 0;
+  transition: top 0.3 ease-in-out;
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+
+.person:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  top: -5px;
+}
+
+.first-name {
+  font-weight: bold;
+  @include font-grade(3);
+}
+
+.surname {
+  text-decoration: underline;
+  @include font-grade(2);
+}
+
+.photo {
+  background: $white;
+  color: $blue;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $gbl-margin;
+}
