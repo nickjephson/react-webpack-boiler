@@ -4,7 +4,7 @@ const html = `<html>
 </head>
 <body>
   <div id='root'></div>
-  <script src="bundle.js"></script>
+  <script src="/bundle.js"></script>
 </body>
 </html>`
 

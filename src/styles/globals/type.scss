@@ -1,14 +1,16 @@
 // Move fonts to fonts file
+$path: '../fonts';
+
 @font-face {
   font-family: 'Roboto Black';
-  src:  url('../fonts/Roboto-Black.ttf') format('woff2');
+  src:  url('#{$path}/Roboto-Black.ttf') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src:  url('../fonts/Roboto-Regular.ttf') format('woff2');
+  src:  url('#{$path}/Roboto-Regular.ttf') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
